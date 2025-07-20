@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | CapitalCompass</title>
+  <title>Contact | TrailBlazer Empire</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
 
-    header {
+    header, nav {
       background-color: #1f2937;
       color: white;
-      text-align: center;
       padding: 1rem 2rem;
+      text-align: center;
     }
 
     nav {
       background-color: #374151;
       display: flex;
       justify-content: center;
-      padding: 0.5rem 0;
     }
 
     nav a {
@@ -38,9 +37,12 @@
     }
 
     .content {
-      padding: 2rem;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     form {
@@ -49,24 +51,27 @@
     }
 
     label {
-      margin-bottom: 0.5rem;
+      margin-top: 1rem;
       font-weight: bold;
     }
 
     input, textarea {
-      padding: 0.75rem;
-      margin-bottom: 1rem;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 4px;
+      font-size: 1rem;
     }
 
     button {
+      margin-top: 1.5rem;
       background-color: #1f2937;
       color: white;
+      padding: 0.8rem;
       border: none;
-      padding: 0.75rem;
-      cursor: pointer;
       border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
     }
 
     button:hover {
@@ -77,8 +82,8 @@
 <body>
 
   <header>
-    <h1>CapitalCompass</h1>
-    <p>Contact — Get in Touch</p>
+    <h1>TrailBlazer Empire</h1>
+    <p>Capital Compass | Contact Us</p>
   </header>
 
   <nav>
@@ -86,27 +91,23 @@
     <a href="tradelogs.html">Trade Logs</a>
     <a href="fundgoals.html">Fund Goals</a>
     <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
   </nav>
 
   <div class="content">
-    <h2>Connect with Us</h2>
-    <p>Have feedback or ideas? Drop a message below or reach out directly via email.</p>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xdkdawog" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required>
 
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" />
+      <label for="email">Your Email</label>
+      <input type="email" name="_replyto" id="email" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="your@email.com" />
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your message here..."></textarea>
-
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
   </div>
 
 </body>
 </html>
-
