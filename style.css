@@ -29,8 +29,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Hero section with centered background image */
 .capital-section {
-  background-image: url('official_logo.png'); /* Make sure the filename is correct */
+  background-image: url('official_logo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,16 +39,16 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
 }
 
 .overlay-text {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
+  padding: 20px;
   border-radius: 8px;
+  color: white;
+  text-align: center;
 }
+
 
 .content {
   padding: 2rem;
