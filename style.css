@@ -29,7 +29,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.content {
+  padding: 2rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('official_logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 /* Hero section with centered background image */
+/*
 .capital-section {
   background-image: url('official_logo.png');
   background-size: cover;
@@ -48,8 +64,5 @@ nav a:hover {
   color: white;
   text-align: center;
 }
+*/
 
-
-.content {
-  padding: 2rem;
-}
