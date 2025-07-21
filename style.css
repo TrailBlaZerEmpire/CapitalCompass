@@ -33,6 +33,7 @@ nav a:hover {
   padding: 2rem;
 }
 
+/*
 .capital-section {
   height: 100vh;
   display: flex;
@@ -45,6 +46,16 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+*/
+.capital-section {
+  background-image: url('official_logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
 }
 
 /* Hero section with centered background image */
