@@ -11,6 +11,17 @@ header {
   text-align: center;
 }
 
+footer {
+  background-color: #1f2937; /* Same dark blue/gray as header for consistency */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
 nav {
   background-color: #374151;
   display: flex;
