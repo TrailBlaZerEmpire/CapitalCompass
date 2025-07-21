@@ -66,3 +66,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.capital-banner {
+  background-image: url('official_logo.png'); /* Change to your correct image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 800px;
+
+  /* Text visibility */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
