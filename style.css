@@ -53,6 +53,7 @@ body {
 }
 */
 
+/*
 .capital-section {
   height: 100vh;
   display: flex;
@@ -66,6 +67,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+*/
 
 .capital-banner {
   background-image: url('official_logo.png'); /* Change to your correct image name */
