@@ -54,11 +54,15 @@ body {
 */
 
 .capital-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
   background-image: url('official_logo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px;
-  color: white;
-  text-align: center;
 }
