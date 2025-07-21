@@ -1,7 +1,10 @@
-body {
-  font-family: Arial, sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -11,14 +14,25 @@ header {
   text-align: center;
 }
 
+/*
 footer {
-  background-color: #1f2937; /* Same dark blue/gray as header for consistency */
+  background-color: #1f2937; /* Same dark blue/gray as header for consistency */ /*
   color: white;
   text-align: center;
   padding: 1rem 0;
   position: relative;
   bottom: 0;
   width: 100%;
+  font-size: 0.9rem;
+}
+*/
+
+/* Style your footer and pin it */
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
   font-size: 0.9rem;
 }
 
@@ -41,6 +55,7 @@ nav a:hover {
 }
 
 .content {
+  flex: 1; /* This allows it to grow and push the footer down */
   padding: 2rem;
 }
 
