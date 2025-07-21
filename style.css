@@ -53,6 +53,7 @@ body {
 }
 */
 
+/*
 .capital-section {
   height: 100vh;
   display: flex;
@@ -66,7 +67,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+*/
 
 /*
 .capital-banner {
@@ -83,3 +84,25 @@ body {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 */
+
+.capital-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('official_logo.png'); /* Check that the image exists in the same repo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Change to black if your background is light */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent box */
+  padding: 20px;
+  border-radius: 10px;
+}
