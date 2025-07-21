@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Media | CapitalCompass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header>
+    <h1>CapitalCompass</h1>
+    <p>Social Media — My Published Works & Talks</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tradelogs.html">Trade Logs</a>
+    <a href="fundgoals.html">Fund Goals</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="brokers.html">Brokers</a>
+  </nav>
+
+  <div class="content">
+    <section id="social-media">
+      <h2>Explore My Work</h2>
+      <p>
+        <strong>Medium Article:</strong>
+        <a href="https://reshal-saba.medium.com/from-learners-to-leaders-guiding-innovation-with-responsibility-487fe34f215b" target="_blank">
+          From Learners to Leaders: Guiding Innovation with Responsibility
+        </a> — A personal take on ethical technology and responsible AI.
+      </p>
+      <p>
+        <strong>YouTube Talk:</strong>
+        <a href="https://www.youtube.com/watch?v=1RITAqNI-gQ" target="_blank">
+          My Presentation on AI for Youth Empowerment
+        </a> — Short clip introducing my advocacy on AI literacy.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 TrailBlazer Empire. All rights reserved.
+  </footer>
+</body>
+</html>
