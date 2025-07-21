@@ -109,3 +109,12 @@ nav a:hover {
 }
 */
 
+.center-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+
