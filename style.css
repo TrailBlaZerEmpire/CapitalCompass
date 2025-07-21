@@ -7,6 +7,10 @@ html, body {
   flex-direction: column;
 }
 
+body {
+  flex: 1;
+}
+
 header {
   background-color: #1f2937;
   color: white;
@@ -14,9 +18,13 @@ header {
   text-align: center;
 }
 
-/*
+.content {
+  flex: 1; /* This allows it to grow and push the footer down */
+  padding: 2rem;
+}
+
 footer {
-  background-color: #1f2937; /* Same dark blue/gray as header for consistency */ /*
+  background-color: #1f2937; /* Same dark blue/gray as header for consistency */ 
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -25,7 +33,7 @@ footer {
   width: 100%;
   font-size: 0.9rem;
 }
-*/
+
 
 /* Style your footer and pin it */
 footer {
@@ -54,10 +62,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.content {
-  flex: 1; /* This allows it to grow and push the footer down */
-  padding: 2rem;
-}
 
 /*
 .capital-section {
