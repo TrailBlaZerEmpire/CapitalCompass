@@ -2,89 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | TrailBlazer Empire</title>
-  <link rel="stylesheet" href="style.css">
-
-   <style>
+  <title>Contact Us | CapitalCompass</title>
+  <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
 
-    header, nav {
-      background-color: #1f2937;
+    header, footer {
+      background-color: #0a0a23;
       color: white;
-      padding: 1rem 2rem;
       text-align: center;
+      padding: 1em;
     }
 
     nav {
-      background-color: #374151;
-      display: flex;
-      justify-content: center;
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
     }
 
     nav a {
+      display: inline-block;
       color: white;
-      margin: 0 1rem;
+      padding: 14px 20px;
       text-decoration: none;
-      font-weight: bold;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #575757;
     }
 
     .content {
-      max-width: 600px;
-      margin: 2rem auto;
-      background-color: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-top: 1rem;
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
       font-weight: bold;
     }
 
-    input, textarea {
-      padding: 0.8rem;
-      margin-top: 0.5rem;
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
     }
 
-    button {
-      margin-top: 1.5rem;
-      background-color: #1f2937;
+    .contact-form textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #007acc;
       color: white;
-      padding: 0.8rem;
       border: none;
-      border-radius: 4px;
-      font-size: 1rem;
+      border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
     }
 
-    button:hover {
-      background-color: #111827;
+    .contact-form button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
-  
+
 <body>
   <header>
-    <h1>TrailBlazer Empire</h1>
-    <p>Capital Compass | Contact Us</p>
+    <h1>CapitalCompass</h1>
+    <p>Contact Us</p>
   </header>
 
   <nav>
@@ -94,21 +95,18 @@
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="brokers.html">Brokers</a>
-    <a href="socialmedia.html">Social Media</a>
   </nav>
 
   <div class="content">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/xdkdawog" method="POST">
-      <input type="hidden" name="_redirect" value="https://trailblazerempire.github.io/success.html">
-      <label for="name">Your Name</label>
-      <input type="text" name="name" id="name" required>
+    <form class="contact-form" action="mailto:your@email.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="email">Your Email</label>
-      <input type="email" name="_replyto" id="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" rows="6" required></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
       <button type="submit">Send Message</button>
     </form>
@@ -117,6 +115,5 @@
   <footer>
     &copy; 2025 TrailBlazer Empire. All rights reserved.
   </footer>
-  
 </body>
 </html>
