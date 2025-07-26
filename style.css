@@ -166,4 +166,33 @@ nav a:hover {
       background-color: #111827;
     }
   */
+/* In style.css */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f7f7f7, #e3e3ff);
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+.hero h1 {
+  font-size: 2.5em;
+}
+.hero p {
+  font-size: 1.2em;
+  color: #444;
+  margin: 10px 0 20px;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cta-button:hover {
+  background-color: #005599;
+}
+
 
