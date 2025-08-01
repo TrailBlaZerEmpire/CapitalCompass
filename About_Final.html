@@ -2,8 +2,8 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SiliconBridge</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<title>CapitalCompass</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <style>
@@ -15,22 +15,37 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 2rem;
         }
     </style>
 </head>
 <body>
 <header class="py-4">
-<div class="container flex justify-center items-center">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center">
 <span class="material-icons text-white mr-2">all_inclusive</span>
-<span class="text-xl font-bold text-white">SiliconBridge</span>
+<span class="text-xl font-bold text-white">CapitalCompass</span>
+</div>
+
+      <nav class="flex items-center gap-9">
+               <a class="text-white text-sm font-medium leading-normal" href="index.html">Home</a>
+               <a class="text-white text-sm font-medium leading-normal" href="about.html">About Us</a>
+               <a class="text-white text-sm font-medium leading-normal" href="index.html">Fund Goals</a>
+               <a class="text-white text-sm font-medium leading-normal" href="about.html">Contact</a>
+               <a class="text-white text-sm font-medium leading-normal" href="index.html">Broker</a>
+               <a class="text-white text-sm font-medium leading-normal" href="about.html">Social Media</a>
+      </nav>
+
+<button class="md:hidden flex items-center">
+<span class="material-icons text-white">menu</span>
+</button>
 </div>
 </header>
-<main class="container">
+<main class="container mx-auto py-8">
 <section class="mb-16" id="about-us">
 <h2 class="text-3xl font-bold text-white mb-4">About Us</h2>
 <p class="text-gray-400 mb-8">
-            SiliconBridge is a pilot-stage venture dedicated to delivering tailored financial solutions for business and personal growth. We specialize in personal finance, investment strategy, and comprehensive fund planning. Our unique model allows us to operate efficiently and autonomously once clients are onboarded, ensuring a seamless and focused experience. We bridge the gap between complex financial concepts and practical application, offering expert advice in financial management and specialized option trading classes to empower our clients.
+            CapitalCompass is a pilot-stage venture dedicated to delivering tailored financial solutions for business and personal growth. We specialize in personal finance, investment strategy, and comprehensive fund planning. Our unique model allows us to operate efficiently and autonomously once clients are onboarded, ensuring a seamless and focused experience. We bridge the gap between complex financial concepts and practical application, offering expert advice in financial management and specialized option trading classes to empower our clients.
         </p>
 <h3 class="text-2xl font-bold text-white mb-4">Our Mission</h3>
 <p class="text-gray-400">
@@ -52,46 +67,106 @@
 </section>
 <section class="mb-16" id="expertise">
 <h3 class="text-2xl font-bold text-white mb-6">Expertise</h3>
-<div class="space-y-6">
-<div class="border-b border-gray-700 pb-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">trending_up</span>
+<h4 class="font-semibold text-white text-lg">Options Trading Strategy</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Options Trading Strategy</h4>
-<p class="text-gray-400">Educator and practitioner of options strategies with real-world success across volatile and sideways markets. Specializes in multi-leg trades, IV crush plays, and strategic hedging.</p>
+<p class="text-gray-400 text-sm">Educator and practitioner of options strategies with real-world success across volatile and sideways markets. Specializes in multi-leg trades, IV crush plays, and strategic hedging.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">account_balance_wallet</span>
+<h4 class="font-semibold text-white text-lg">Financial Planning &amp; Fund Management</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Financial Planning &amp; Fund Management</h4>
-<p class="text-gray-400">Experienced in structuring goal-based fund allocations. Combines technical market tools with personal finance frameworks to build sustainable growth portfolios.</p>
+<p class="text-gray-400 text-sm">Experienced in structuring goal-based fund allocations. Combines technical market tools with personal finance frameworks to build sustainable growth portfolios.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">school</span>
+<h4 class="font-semibold text-white text-lg">Retail Investor Education</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Retail Investor Education</h4>
-<p class="text-gray-400">Designed and taught 4-tier option education programs — from beginner fundamentals to advanced volatility crush methods — tailored for aspiring retail traders.</p>
+<p class="text-gray-400 text-sm">Designed and taught 4-tier option education programs — from beginner fundamentals to advanced volatility crush methods — tailored for aspiring retail traders.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">gpp_good</span>
+<h4 class="font-semibold text-white text-lg">Risk Management &amp; Position Sizing</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Risk Management &amp; Position Sizing</h4>
-<p class="text-gray-400">Fluent in translating professional-grade risk management into practical frameworks for individual traders. Helps clients preserve capital while staying in the game.</p>
+<p class="text-gray-400 text-sm">Fluent in translating professional-grade risk management into practical frameworks for individual traders. Helps clients preserve capital while staying in the game.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">psychology</span>
+<h4 class="font-semibold text-white text-lg">Market Psychology &amp; Discipline Building</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Market Psychology &amp; Discipline Building</h4>
-<p class="text-gray-400">Focuses on mindset, behavioral finance, and consistency. Guides traders through the emotional rollercoaster with tools that encourage patience, journaling, and process over outcome.</p>
+<p class="text-gray-400 text-sm">Focuses on mindset, behavioral finance, and consistency. Guides traders through the emotional rollercoaster with tools that encourage patience, journaling, and process over outcome.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">public</span>
+<h4 class="font-semibold text-white text-lg">Multi-Market Investment Experience</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Multi-Market Investment Experience</h4>
-<p class="text-gray-400">Actively invested across major equity markets — Malaysia (KLSE), Hong Kong (HSI), United States (NYSE/NASDAQ), and Singapore (SGX). Diversified across asset classes including equities, money market funds (MMF), and fixed income products. Hands-on experience in building resilient, goal-oriented portfolios tailored to different risk profiles.</p>
+<p class="text-gray-400 text-sm">Actively invested across major equity markets — Malaysia (KLSE), Hong Kong (HSI), United States (NYSE/NASDAQ), and Singapore (SGX). Diversified across asset classes including equities, money market funds (MMF), and fixed income products.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">pie_chart</span>
+<h4 class="font-semibold text-white text-lg">Portfolio Construction &amp; Asset Allocation</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Portfolio Construction &amp; Asset Allocation</h4>
-<p class="text-gray-400">Skilled in constructing personalized portfolios that balance growth, income, and liquidity. Understands asset behavior across economic cycles, and applies disciplined rebalancing techniques aligned with long-term goals.</p>
+<p class="text-gray-400 text-sm">Skilled in constructing personalized portfolios that balance growth, income, and liquidity. Understands asset behavior across economic cycles, and applies disciplined rebalancing techniques aligned with long-term goals.</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">analytics</span>
+<h4 class="font-semibold text-white text-lg">Quantitative &amp; Financial Analysis</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Quantitative &amp; Financial Analysis</h4>
-<p class="text-gray-400">Deep expertise in analyzing company financials, interpreting balance sheets, income statements, and cash flow metrics. Applies quantitative tools to evaluate valuation metrics (P/E, EV/EBITDA, DCF, etc.) — a key foundation before any trade is executed.</p>
+<p class="text-gray-400 text-sm">Deep expertise in analyzing company financials, interpreting balance sheets, income statements, and cash flow metrics. Applies quantitative tools to evaluate valuation metrics (P/E, EV/EBITDA, DCF, etc.).</p>
 </div>
-<div class="border-b border-gray-700 pb-4">
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">functions</span>
+<h4 class="font-semibold text-white text-lg">Fundamental-Driven Option Strategy</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Fundamental-Driven Option Strategy</h4>
-<p class="text-gray-400">Believes that great options trades begin with solid company analysis. Emphasizes that option premiums reflect underlying valuation strength, implied volatility, and market expectations. Teaches students how to align option strategies with real company fundamentals, not just price movement.</p>
+<p class="text-gray-400 text-sm">Believes that great options trades begin with solid company analysis. Emphasizes that option premiums reflect underlying valuation strength, implied volatility, and market expectations.</p>
 </div>
-<div>
+</div>
+<div class="group relative bg-gray-800 rounded-lg p-6 overflow-hidden md:col-span-2 lg:col-span-1">
+<div class="flex flex-col items-center justify-center h-full text-center transition-opacity duration-300 group-hover:opacity-0">
+<span class="material-icons text-blue-400 text-5xl mb-4">business_center</span>
+<h4 class="font-semibold text-white text-lg">Business Valuation &amp; Strategy Analysis</h4>
+</div>
+<div class="absolute inset-0 bg-gray-900 bg-opacity-90 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
 <h4 class="font-semibold text-blue-400 mb-2">Business Valuation &amp; Strategy Analysis</h4>
-<p class="text-gray-400">Trained to think like a business analyst — breaking down models, growth potential, moats, and strategy execution. Equally important for long-term investors and short-term traders. If you can’t value a company, you’re trading blind.</p>
+<p class="text-gray-400 text-sm">Trained to think like a business analyst — breaking down models, growth potential, moats, and strategy execution. Equally important for long-term investors and short-term traders.</p>
+</div>
 </div>
 </div>
 </section>
