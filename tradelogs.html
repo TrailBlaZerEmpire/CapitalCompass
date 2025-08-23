@@ -4,6 +4,64 @@
   <meta charset="UTF-8" />
   <title>Performance Tracker | CapitalCompass</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-Specific Styling */
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1a365d;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #2d3748;
+    }
+
+    p {
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+
+    .month-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .month-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .month-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .month-card a {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+
+    .month-card a:hover {
+      color: #1a365d;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,7 +73,7 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="tradelogs.html">Performance Tracker</a>
+    <a href="tradelogs.html" class="active">Performance Tracker</a>
     <a href="fundgoals.html">Fund Goals</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
@@ -23,31 +81,25 @@
     <a href="socialmedia.html">Social Media</a>
   </nav>
 
-  <!-- Old 
-  <div class="content">
-    <section id="tradelogs">
+  <main>
     <h2>Your Trade Logs</h2>
-     
-    <p> Moo Moo 1st Account </p>
-    <p> July Performance </p>
-    <img src="Jun-Jul_2025.jpg" alt="Jun-Jul_2025" style="width: 150%; height: auto; display: block; margin: 0 auto; max-width: 500px;"
-  </div>
--->
-   <h2>Your Trade Logs</h2>
-   <h3>Monthly Highlights</h3>
-   <p>Performance Tracker — Learn. Track. Improve.</p>
-  <ul>
-    <li><a href="Dec2024.html">Dec 2024</a></li>
-    <li><a href="Jan.html">Jan 2025</a></li>
-    <li><a href="Feb.html">Feb 2025</a></li>
-    <li><a href="March.html">March 2025</a></li>
-    <li><a href="April.html">April 2025</a></li>
-    <li><a href="May.html">May 2025</a></li>
-    <li><a href="June.html">June 2025</a></li>
-    <li><a href="July.html">July 2025</a></li>
-    <!-- Add more months -->
-  </ul>
-    <footer>
+    <h3>Monthly Highlights</h3>
+    <p>Stay on top of your performance — each month is tracked here for easy review and improvement.</p>
+
+    <div class="month-list">
+      <div class="month-card"><a href="Dec2024.html">December 2024</a></div>
+      <div class="month-card"><a href="Jan.html">January 2025</a></div>
+      <div class="month-card"><a href="Feb.html">February 2025</a></div>
+      <div class="month-card"><a href="March.html">March 2025</a></div>
+      <div class="month-card"><a href="April.html">April 2025</a></div>
+      <div class="month-card"><a href="May.html">May 2025</a></div>
+      <div class="month-card"><a href="June.html">June 2025</a></div>
+      <div class="month-card"><a href="July.html">July 2025</a></div>
+      <!-- Add more months as needed -->
+    </div>
+  </main>
+
+  <footer>
     &copy; 2025 TrailBlazer Empire. All rights reserved.
   </footer>
 </body>
