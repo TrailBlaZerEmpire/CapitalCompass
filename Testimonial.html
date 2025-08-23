@@ -2,42 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Testimonial | TrailBlazer Empire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brokers • Testimonials • Contact | TrailBlazer Empire</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>TrailBlazer Empire</h1>
     <p>Connecting Futures Across Finance, Tech, and Strategy</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="tradelogs.html">Performance Tracker</a>
     <a href="fundgoals.html">Fund Goals</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="brokers.html">Brokers</a>
     <a href="socialmedia.html">Social Media</a>
-    <a href="Testimonial.html">Testimonial</a>
     <a href="finance_learning.html">Finance & Credential</a>
   </nav>
 
-  <!--
-  <div class="capital-section">
-    <h1>Welcome to CapitalCompass</h1>
-    <p>Long-term Wealth. Strategic Fund. Calm Finance.</p>
-  </div>
--->
-  
-  <div class="content">
-    <h2>Welcome to CapitalCompass</h2>
-    <p>This site is dedicated for Testimonial.</p>
-  </div>
+  <!-- Main Content -->
+  <main class="content">
 
+    <!-- Brokers Section -->
+    <section id="brokers" style="margin-bottom: 3rem;">
+      <h2>Brokers We Work With</h2>
+      <p>Here’s a quick overview of our brokerage partners supporting different investment needs.</p>
+      
+      <div style="text-align:center; margin: 2rem 0;">
+        <p><strong>Featured Broker:</strong></p>
+        <p>
+          <a href="https://www.moomoo.com/my/promotion/referee?inviter=103386610&global_content=%7B%22promote_id%22%3A15066%2C%22sub_promote_id%22%3A3%7D" target="_blank">
+            Moo Moo
+          </a>
+        </p>
+        <img src="Referral.jpg" alt="Referral" style="max-width:400px; width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="margin: 3rem 0;">
+      <h2>Testimonials</h2>
+      <p>What our community says about TrailBlazer Empire:</p>
+
+      <div style="max-width:700px; margin:2rem auto; text-align:left;">
+        <blockquote style="background:#f9f9f9; padding:1.5rem; border-left:4px solid #1f2937; margin-bottom:1.5rem; border-radius:8px;">
+          <p>“TrailBlazer gave me clarity on fund goals beyond just making money. I feel more in control of my financial future.”</p>
+          <footer>— Sarah, Retail Investor</footer>
+        </blockquote>
+
+        <blockquote style="background:#f9f9f9; padding:1.5rem; border-left:4px solid #1f2937; margin-bottom:1.5rem; border-radius:8px;">
+          <p>“The performance tracker is elegant and easy to use. It keeps me accountable and focused.”</p>
+          <footer>— Daniel, Tech Analyst</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Contact Section -->
+    <section id="contact" style="margin: 3rem 0;">
+      <h2>Contact Us</h2>
+      <p>Have a question or want to collaborate? Reach out below.</p>
+
+      <form action="https://formspree.io/f/xdkdawog" method="POST" class="contact-form" style="max-width:600px; margin:2rem auto;">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-  &copy; 2025 TrailBlazer Empire. All rights reserved.
+    &copy; 2025 TrailBlazer Empire. All rights reserved.
   </footer>
 
 </body>
